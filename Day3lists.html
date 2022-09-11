@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 3 HTML Practice</title>
+    <link rel="icon" href="img/html5-logo-31813.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My Goals For The Year</h1>
+
+      <nav>
+        <ol>
+          <li>
+            <a href="#HTML">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#Vacation">Planning a Vacation</a>
+          </li>
+          <li>
+            <a href="Contact">Contact Me</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <!--<article was prev <section>-->
+      <article id="HTML">
+        <h2>I am ready to learn HTML</h2>
+        <p>This is my first web page</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html5-logo-31813.png"
+            alt="HTML Logo"
+            title="I am learning HTML5"
+            width="150"
+            height="150"
+          />
+          <figure>
+            <figcaption>An example of a HTML5 Code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My Daily schedule</h3>
+          <p>Let me tell you how i;</p>
+          <ol>
+            <li>...I learn more about web dev</li>
+            <li>...i plan out my schedule</li>
+            <li>
+              ...i use resources from
+              <abbr title="The Zenith Bank">
+                <a href="https://www.zenithbank.com.gh/">MTN</a>
+              </abbr>
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> i code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8pm</time> and write code for
+                <time datetime="PT5H">5 hours</time> every evening
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+              <caption>
+                My Daily Schedule
+              </caption>
+              <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>Time</th>
+                <th>Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th>Brunch</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="02:00"
+                    >2pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th>Afternoon</th>
+                <td>
+                  <time datetime="03:00">3pm</time>-<time datetime="04:00"
+                    >4pm</time
+                  >
+                </td>
+                <td>Study for other courses</td>
+              </tr>
+              <tr>
+                <th>Break</th>
+                <td>
+                  <time datetime="04:00">4pm</time>-<time datetime="05:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Eat Dinner</td>
+              </tr>
+              <tr>
+                <td colspan="3">Me Time</td>
+              </tr>
+              <tr>
+                <td rowspan="2">All other times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">
+                  And that's what i do everyday,5 Days a week.Just
+                  eat,sleep,code and recharge
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+
+      <hr />
+      <!--article was previously <section>-->
+      <article id="Vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>Ive been working hard and <em>really need a getaway</em></p>
+        <p>
+          i live in <abbr title="Dansonam City">D.C</abbr> so i want to visit a
+          beach
+        </p>
+        <section>
+          <h3>Places i'd like to visit</h3>
+          <ul>
+            <li>
+              <p>I've heard god things about the Carribean</p>
+              <figure>
+                <img
+                  src="img/IMG_5093.jpg"
+                  alt="Carribean Beach"
+                  title="I want to visit a caribbean beach"
+                  width="400"
+                  height="300"
+                />
+                <figcaption>Tulum Beach - Mexico</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <p>I've head good things about going here;</p>
+              <address>
+                Malvin International Beach <br />
+                P.O.box An 11342 Accra North <br />
+                Kaneshie Accra - 0245014460
+              </address>
+              <figure>
+                <img
+                  src="img/IMG_4819.png"
+                  alt="Mal International Beach"
+                  title="My dream vacation location"
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                />
+                <figcaption>Vacation Beach Image</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- Todo; Add more places -->
+        <section>
+          <h3>Places I want to avoid</h3>
+          <dl>
+            <dt>Aburi Mountains</dt>
+            <dd>This place is <strong>COLD</strong>!</dd>
+
+            <dt>South Aburi Mountains</dt>
+            <dd>This place is also Cold</dd>
+
+            <dt>North Aburi <em>Mountains</em></dt>
+            <dd>This is also another very cold region</dd>
+          </dl>
+        </section>
+      </article>
+
+      <hr>
+
+      <article id="Contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+          <p>
+           <label for="firstName">First Name:</label>
+           <input type="text" name="firstName" id="firstName" placeholder="Trudy" autocomplete="on"
+           required autofocus>
+          </p>
+          <p>
+           <label for="lastName">Last Name:</label>
+           <input type="text" name="lastName" id="lastName" placeholder="Awuah" required>
+          </p>
+          <p> 
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="Your secret" required>
+          </p>
+          <p>
+            <label for="Phone">Phone:</label>
+            <input type="tel" name="Phone" id="Phone" placeholder="2222222222" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+          </p>
+          <p>
+            <label for="Decade">Favorite Decade:</label>
+            <input type="number" name="Decade" id="Decade" min="1950" max="2020" step="10" value="1960">
+          </p>
+        <p>
+            <label for="coffee">Favorite coffee:</label>
+            <select name ="coffee" id="coffee">
+              <optgroup label="Coffees">
+            <option value ="regular coffee">Regular Coffee</option>
+            <option value="iced coffee">Iced Coffee</option>
+          </optgroup>
+          <optgroup label="Expresso Drinks">
+            <option value="latte">Latte</option>
+            <option value="Cappucino">Cappucino</option>
+            <option value="cortado">Cortado</option>
+            <option value="americano">Americano</option>
+          </optgroup>
+            <option value="other" selected>Other</option>
+          </select>
+          </p>
+          <!-- <p>
+            <label for="coffee">Favorite coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+              <option value="coffee">
+              <option value="latte">
+              <option value="espresso">
+              <option value="cortado">
+              <option value="americano">
+              <option value="other">
+            </datalist>
+          </p> -->
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite food?</legend>
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="burger" value="burger">
+            <label for="burger">Burger</label>
+        burger
+          <p>
+            <input type="radio" name="food" id="other" value="other">
+            <label for="other">Other</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+          </p>
+        </fieldset>
+        </form></main>
+    <hr/>
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Malvin Jay</a> &reg;
+        &gt;&gt;&gt;
+      </p>   
+
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>
